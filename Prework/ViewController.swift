@@ -10,20 +10,27 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var billAmountTextField: UITextField!
-    
     @IBOutlet weak var tipAmountLabel: UILabel!
-    
-    
     @IBOutlet weak var tipControl: UISegmentedControl!
-    
-    
     @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var tipCalculator: UILabel!
     
+    let defaults = UserDefaults.standard
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        UIView.animate(withDuration: 2.0) {
+            self.tipCalculator.frame = CGRect(x: self.tipCalculator.center.x, y: self.tipCalculator.center.y, width: 200, height: 200)
+            self.tipCalculator.center.x = self.view.center.x
+        }
+        
+        if defaults.bool(forKey: "tip") {
+            tipAmountLabel.text = defaults.string(forKey: "tip")
+            totalLabel.text = defaults.string(forKey: "total")
+        }
+        
     }
 
 
@@ -41,7 +48,19 @@ class ViewController: UIViewController {
         
         // Update Total Amount
         totalLabel.text = String(format: "$%.2f", total)
-    }
 
+        let tipAmountStorage = String(format: "$%.2f", tip)
+        let totalAmountStorage = String(format: "$%.2f", total)
+        
+        // Store value
+        defaults.set(tipAmountStorage, forKey: "tip")
+        defaults.set(totalAmountStorage, forKey: "total")
+    }
+    
+    
+    @IBAction func calculateTipOnAmountChange(_ sender: Any) {
+        calculateTip(self)
+    }
+    
 }
 
