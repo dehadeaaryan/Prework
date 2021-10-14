@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB122DD927176A2400EA66E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB122DD827176A2400EA66E4 /* SettingsViewController.swift */; };
 		BB8E54FA26D91C8A0082D76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8E54F926D91C8A0082D76F /* AppDelegate.swift */; };
 		BB8E54FC26D91C8A0082D76F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8E54FB26D91C8A0082D76F /* SceneDelegate.swift */; };
 		BB8E54FE26D91C8A0082D76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8E54FD26D91C8A0082D76F /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB122DD827176A2400EA66E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		BB8E54F626D91C8A0082D76F /* Prework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8E54F926D91C8A0082D76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB8E54FB26D91C8A0082D76F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				BB8E550226D91C8C0082D76F /* Assets.xcassets */,
 				BB8E550426D91C8C0082D76F /* LaunchScreen.storyboard */,
 				BB8E550726D91C8C0082D76F /* Info.plist */,
+				BB122DD827176A2400EA66E4 /* SettingsViewController.swift */,
 			);
 			path = Prework;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				BB8E54FE26D91C8A0082D76F /* ViewController.swift in Sources */,
 				BB8E54FA26D91C8A0082D76F /* AppDelegate.swift in Sources */,
 				BB8E54FC26D91C8A0082D76F /* SceneDelegate.swift in Sources */,
+				BB122DD927176A2400EA66E4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
