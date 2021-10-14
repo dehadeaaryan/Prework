@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![](https://i.imgur.com/2IgzhAv.gif)
+![](https://github.com/dehadeaaryan/Prework/blob/main/gif.gif)
 
 
 ## Notes
